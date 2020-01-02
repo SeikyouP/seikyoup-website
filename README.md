@@ -1,1 +1,1 @@
-# seikyoup-website
+# SeikyouP Website (seikyoup.com)
