@@ -19,9 +19,8 @@ html {
 body {
   min-width: 320px;
   overflow-x: hidden;
-  background-color: transparent;
+  background-color: #333;
   color: #fff;
-  width: 100%;
 }
 
 body.active {
@@ -89,11 +88,6 @@ section {
   border-bottom: 1px solid #555;
   background-color: #fff;
   color: #000;
-}
-
-section:nth-child(even) {
-  background-color: #333;
-  color: #fff;
 }
 
 .hamburger {
@@ -204,32 +198,12 @@ header.active {
   text-align: right;
 }
 
-.top--menu {
-  display: none;
-}
-
-.top--menu ul {
-  font-size: 0;
-}
-
-.top--menu li {
-  line-height: 4rem;
-  transition: 250ms;
-}
-
-.top--menu li:hover {
-  background-color: #444;
-}
-
-.top--menu a {
-  display: block;
-  font-size: 1rem;
-}
-
 /* Main content-specfic Selectors */
 .content {
+  max-width: 1080px;
   background-color: #333;
   color: #fff;
+  margin: auto;
 }
 
 .content--top {
@@ -336,7 +310,7 @@ header.active {
 
 .content--about p {
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 150%;
 }
 
 .content--about div {
@@ -563,22 +537,14 @@ footer {
 }
 
 /* Tablet Only */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .top--brand {
     width: 240px;
     border-right: 1px solid #000;
   }
 
-  .top--menu {
-    display: block;
-  }
-
-  .top--menu li {
-    display: inline-block;
-  }
-
-  .top--menu a {
-    display: block;
+  .top--brand--logo a {
+    text-align: center;
   }
 
   aside {
@@ -591,23 +557,10 @@ footer {
     width: 240px;
   }
 
-  .btn--back {
-    right: 100%;
-  }
-
-  .btn--back__active {
-    right: calc(100% - 240px);
-  }
-
   main,
   footer {
     padding-left: 0;
     transition: 250ms ease-out;
-  }
-
-  main.active,
-  footer.active {
-    padding-left: 240px;
   }
 
   .content--connect {
@@ -617,16 +570,4 @@ footer {
   .content--connect ul {
     margin-top: 0;
   }
-}
-
-/* Desktop Only*/
-@media (min-width: 1024px) {
-}
-
-/* Widescreen-Desktop Only */
-@media (min-width: 1216px) {
-}
-
-/* Full HD Only */
-@media (min-width: 1408px) {
 }

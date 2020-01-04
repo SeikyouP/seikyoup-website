@@ -2,9 +2,7 @@
 var navBtn = document.querySelector('.top--brand--icon');
 var navBar = document.querySelector('header');
 var sideBar = document.querySelector('aside');
-var content = document.querySelector('main');
 var sections = document.querySelectorAll('section');
-var footer = document.querySelector('footer');
 var topBtn = document.querySelector('.btn--top');
 var modalSpace = document.querySelector('.modal-space');
 var body = document.querySelector('body');
@@ -38,8 +36,6 @@ function navButton() {
   navBtn.children[0].classList.toggle('is-active');
   sideBar.classList.toggle('open');
   modalSpace.classList.toggle('modal-space__active');
-  content.classList.toggle('active');
-  footer.classList.toggle('active');
 
   // Remove scroll bar when viewed on mobile devices
   if (mobile.matches) {
@@ -77,8 +73,6 @@ function outsideClick() {
   navBtn.children[0].classList.remove('is-active');
   sideBar.classList.remove('open');
   modalSpace.classList.remove('modal-space__active');
-  content.classList.remove('active');
-  footer.classList.remove('active');
 
   // Add scroll bar when viewed on tablet/desktop devices
   if (mobile.matches) {
