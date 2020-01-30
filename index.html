@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="bryan onwas" />
-    <meta name="description" content="a collection of my personal projects" />
-    <meta name="keywords" content="seikyoup, web, website, project" />
+    <meta name="description" content="a collection of my personal projects and designs" />
+    <meta name="keywords" content="seikyoup, web, website, project, design, template" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
+    <title>Portfolio [Template Plate]</title>
 
     <!-- Devicons -->
     <link
@@ -19,310 +19,418 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" />
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" />
+    <!-- Google Fonts/Material Design Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" />
 
-    <!-- CSS Files/Dependencies -->
+    <!-- CSS Files/Dependencies/Extensions/Plugins -->
     <link rel="stylesheet" href="css/hamburgers.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <!-- Top Header -->
+    <!-- Header Menu (Display on Tablet/Desktop view only) -->
     <header>
-      <div class="top">
-        <div class="top--brand">
-          <div class="top--brand--icon">
-            <button class="hamburger hamburger--squeeze" type="button" aria-label="sidebar-button">
-              <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-            </button>
+      <div class="container-1440">
+        <div class="header">
+          <div class="logo">
+            <a href="/" class="name">SeikyouP</a>
           </div>
-          <div class="top--brand--logo"><a href="">SeikyouP</a></div>
+
+          <div class="header-menu">
+            <a href="#home" class="current">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Moblie Menu (Display on Moblie Phone view only) -->
+    <aside>
+      <div class="logo">
+        <a href="/" class="name">SeikyouP</a>
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="moblie-menu">
+        <a href="#home" class="current">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -- HOME -->
     <main>
-      <div class="content">
-        <section class="content--top" id="top">
-          <p class="content--name">Bryan Onwas</p>
-          <p class="content--role">Freelance Web Developer</p>
+      <section id="home">
+        <div class="name-box">
+          <h1 class="name">Bryan Onwas</h1>
+          <h2 class="role">Web Developer</h2>
+        </div>
 
-          <ul class="content--download">
-            <li>
-              <a href="https://github.com/SeikyouP/seikyoup-website" target="_blank" rel="noopener noreferrer"
-                ><i class="fas fa-code"></i>View Code</a
-              >
-            </li>
-          </ul>
+        <div class="arrow-box">
+          <p>Click or scroll down</p>
+          <i class="material-icons-outlined">
+            <a href="#about">arrow_downward</a>
+          </i>
+        </div>
+      </section>
 
-          <div class="content--scroll">
-            <a href="#about" aria-label="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
+      <!-- Main Content -- ABOUT -->
+
+      <section id="about">
+        <div class="container-1080">
+          <div class="intro">
+            <h2 class="title">Tell us about yourself?</h2>
+            <p>
+              I'm currently a freelance front-end web developer who is passionate in learning new technologies in order
+              to solve problems and bring more value to the industry while working on building bigger ideas and
+              solutions. Since the beginning of my path as a front-end developer, I've done a lot of personal projects
+              during my time as a freelancer. Projects that were challenging made me learn different frameworks and
+              languages and allow me to grow as a developer. I'm a confident, curious person who is willing to spend the
+              extra hours on learning new things!
+            </p>
           </div>
-        </section>
 
-        <section class="content--about" id="about">
-          <h2 class="content--about--title content--title wow fadeIn">
-            <i class="fas fa-question-circle"></i>Who am I?
-          </h2>
-
-          <p class="wow fadeIn delay-1s">
-            Hello there. I'm Bryan Onwas. I'm currently a freelance front-end web developer who is passionate in
-            learning new technologies in order to solve more problems and bring more value to the industry while working
-            on building bigger ideas and solutions. Since the beginning of my path as a front-end developer, I've done a
-            lot of personal projects during my time as a freelancer. Projects that were challenging made me learn
-            different frameworks and languages and allow me to grow as a developer. I'm quite confident, curious person
-            and I'm willing to spend some extra hours on learning new things! Being a front-end developer is also my
-            hobby as I like to develop and simulate fictional company websites as it was real.
-          </p>
-
-          <div class="process wow fadeIn delay-2s">
-            <h2>My thought process when developing a website:</h2>
-
-            <ul>
+          <div class="skills">
+            <h3 class="title">What skills do you have?</h3>
+            <ul data-aos="fade-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
               <li>
-                <h3 class="step-title">Step 1</h3>
-                <i class="far fa-file"></i>Plan
-                <p>
-                  Who's the target audience? What type of business and website? Which web stack will be used? What about
-                  cross-compatabilty?
-                </p>
+                <i class="devicon-html5-plain colored"></i>
+                <p>Semantic HTML5</p>
               </li>
-
               <li>
-                <h3>Step 2</h3>
-                <i class="fas fa-pencil-alt"></i>Design
-                <p>I start designing the website based on the planning.</p>
+                <i class="devicon-css3-plain colored"></i>
+                <p>Responsive CSS3</p>
               </li>
-
               <li>
-                <h3>Step 3</h3>
-                <i class="fas fa-code"></i>Execute
-                <p>I start coding the website. What I design is what I build.</p>
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
               </li>
-
               <li>
-                <h3>Step 4</h3>
-                <i class="fas fa-vial"></i>Test
-                <p>I check for bugs, cross-compatabilty, and UI/UX design.</p>
+                <i class="devicon-jquery-plain colored"></i>
+                <p>JQuery</p>
               </li>
-
               <li>
-                <h3>Step 5</h3>
-                <i class="fas fa-globe"></i>Deploy
-                <p>
-                  I pushed my code into github and deploy the website. When working with other developers, I instead
-                  will push and send a pull request.
-                </p>
+                <i class="devicon-sass-original colored"></i>
+                <p>SCSS/SASS</p>
               </li>
-
               <li>
-                <h3>Step 6</h3>
-                <i class="fas fa-sync"></i>Repeat
-                <p>I rinse and repeat the process as I add more features and content on the website.</p>
+                <i class="devicon-photoshop-plain colored"></i>
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <i class="devicon-wordpress-plain colored"></i>
+                <p>WordPress</p>
+              </li>
+              <li>
+                <i class="fab fa-figma"></i>
+                <p>Figma</p>
+              </li>
+              <li>
+                <i class="devicon-git-plain colored"></i>
+                <p>Git</p>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <p>HTML Emails</p>
+              </li>
+              <li>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Mobile First</p>
+              </li>
+              <li>
+                <i class="fas fa-edit"></i>
+                <p>PSD to HTML</p>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="content--skills" id="skills">
-          <h2 class="content--skills--title content--title wow fadeIn"><i class="fas fa-code"></i>Any skills?</h2>
+      <!-- Main Content -- SERVICES -->
+      <section id="services">
+        <div class="container-1080">
+          <h2 class="title">How do you develop your website?</h2>
 
-          <ul class="wow fadeIn delay-1s">
-            <li><i class="devicon-html5-plain colored"></i><span>Semantic HTML5</span></li>
-            <li><i class="devicon-css3-plain colored"></i><span>Responsive CSS3</span></li>
-            <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
-            <li><i class="devicon-jquery-plain colored"></i><span>JQuery</span></li>
-            <li><i class="devicon-sass-original colored"></i><span>SCSS/SASS</span></li>
-            <li><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></li>
-            <li><i class="devicon-wordpress-plain colored"></i><span>WordPress</span></li>
-            <li><i class="fab fa-figma"></i><span>Figma</span></li>
-            <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
-            <li><i class="devicon-github-plain colored"></i><span>GitHub</span></li>
-            <li><i class="fas fa-mobile-alt"></i><span>Mobile First</span></li>
-            <li><i class="fas fa-edit"></i><span>PSD to Website</span></li>
-            <li><i class="far fa-check-circle"></i><span>BEM Methodology</span></li>
-            <li><i class="fas fa-search"></i><span>Attention to detail</span></li>
-            <li><i class="fas fa-cogs"></i><span>Natural Problem Solver</span></li>
-          </ul>
-        </section>
+          <div class="step">
+            <div class="circle">
+              <div class="number">1</div>
+              <div class="title">Plan</div>
+            </div>
+            <p class="odd">
+              Who's the target audience? What type of business and website? Which web stack will be used? What about
+              cross-compatabilty?
+            </p>
+          </div>
 
-        <section class="content--projects" id="projects">
-          <h2 class="content--projects--title content--title wow fadeIn">
-            <i class="fas fa-desktop"></i> Any Projects?
-          </h2>
+          <div class="step">
+            <div class="circle">
+              <div class="number">2</div>
+              <div class="title">Design</div>
+            </div>
+            <p class="even">I start designing the website based on what was planned on the beginning.</p>
+          </div>
 
-          <div class="content--projects--body">
-            <figure class="wow fadeIn delay-1s">
-              <a href="http://www.ispecialwears.com" target="_blank" rel="noopener noreferrer">I-Special</a>
-              <figcaption>A clothing shop</figcaption>
+          <div class="step">
+            <div class="circle">
+              <div class="number">3</div>
+              <div class="title">Execute</div>
+            </div>
+            <p class="odd">I start writing code for the website based on the design. What I design is what I build.</p>
+          </div>
+
+          <div class="step">
+            <div class="circle">
+              <div class="number">4</div>
+              <div class="title">Test</div>
+            </div>
+            <p class="even">I check for bugs, cross-compatabilty, speed, and UI/UX design.</p>
+          </div>
+
+          <div class="step">
+            <div class="circle">
+              <div class="number">5</div>
+              <div class="title">Deploy</div>
+            </div>
+
+            <p class="odd">
+              I push my code into github and deploy the website. When working with other developers, I instead will push
+              and send a pull request.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="circle">
+              <div class="number">6</div>
+              <div class="title">Repeat</div>
+            </div>
+            <p class="even">I rinse and repeat the process as I add more features and content on the website.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Content -- PROJECTS -->
+      <section id="projects">
+        <div class="container-1080">
+          <h2 class="title">Any projects you like to share?</h2>
+
+          <div class="project-list">
+            <figure>
+              <h3 class="project-title">I-Special Wears</h3>
+              <a href="http://www.ispecialwears.com" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>An E-Commerce fashion website</figcaption>
+            </figure>
+
+            <figure>
+              <h3 class="project-title">--</h3>
+              <a href="#" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+
+            <figure>
+              <h3 class="project-title">--</h3>
+              <a href="#" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+
+            <figure>
+              <h3 class="project-title">--</h3>
+              <a href="#" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+
+            <figure>
+              <h3 class="project-title">--</h3>
+              <a href="#" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>Coming Soon</figcaption>
+            </figure>
+
+            <figure>
+              <h3 class="project-title">--</h3>
+              <a href="#" rel="noopener noreferrer">
+                <div class="thumbnail">
+                  <div class="empty">
+                    -Empty-
+                    <p>No Thumbnail</p>
+                  </div>
+                </div>
+              </a>
+              <figcaption>Coming Soon</figcaption>
             </figure>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="content--hire" id="hire">
-          <h2 class="content--projects--title content--title wow fadeIn">
-            <i class="fas fa-user-tie"></i> Why hire me?
-          </h2>
-          <p class="wow fadeIn">Here are some of the benefits when you hire me:</p>
-          <ul class="wow fadeIn delay-1s">
-            <li>
-              <i class="fas fa-heart"></i>
-              <h3>Passionate</h3>
+      <!-- Main Content -- CONTACT -->
+      <section id="contact">
+        <div class="container-1080">
+          <h2 class="title">Why should I hire you?</h2>
+          <p>Here are some of the benefits when you hire me:</p>
+
+          <div class="cards">
+            <div class="card">
+              <div class="card-title">
+                <i class="material-icons">favorite_border</i>
+                <h3>Passionate</h3>
+              </div>
+
               <p>
                 I believe that greatest work is done by passionate, dedicated people who loves what they do for a
                 living.
               </p>
-            </li>
+            </div>
 
-            <li>
-              <i class="fas fa-angle-double-right"></i>
-              <h3>Fast Learner</h3>
+            <div class="card">
+              <div class="card-title">
+                <i class="material-icons">double_arrow</i>
+                <h3>Fast Learner</h3>
+              </div>
+
               <p>
                 I'm confident in my ability to learn something new and put it into production. Thrive in fast-paced and
                 competitive environments.
               </p>
-            </li>
+            </div>
 
-            <li>
-              <i class="fas fa-sync"></i>
-              <h3>Adaptable</h3>
+            <div class="card">
+              <div class="card-title">
+                <i class="material-icons">
+                  <i class="material-icons">sync</i>
+                </i>
+                <h3>Adaptable</h3>
+              </div>
+
               <p>
                 I'm always excited to learn new things. The most valuable thing I can provide to your company is the
                 ability to be molded to your stack.
               </p>
-            </li>
+            </div>
 
-            <li>
-              <i class="fas fa-users"></i>
-              <h3>Teamwork</h3>
+            <div class="card">
+              <div class="card-title">
+                <i class="fas fa-users"></i>
+                <h3>Teamwork</h3>
+              </div>
+
               <p>
                 Having the ability to collaborate with clients and peers from all levels is crucial for web development.
                 Teamwork makes the dream work!
               </p>
-            </li>
+            </div>
 
-            <li>
-              <i class="fas fa-lightbulb"></i>
-              <h3>Innovative</h3>
+            <div class="card">
+              <div class="card-title">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovative</h3>
+              </div>
+
               <p>
                 I bring new ideas to the table, while focusing on how I can create user experiences with simple and
                 inherent design. I want to show you how I believe that less is more.
               </p>
-            </li>
+            </div>
 
-            <li>
-              <i class="fas fa-fist-raised"></i>
-              <h3>Hard Worker</h3>
+            <div class="card">
+              <div class="card-title">
+                <i class="fas fa-fist-raised"></i>
+                <h3>Hard Worker</h3>
+              </div>
+
               <p>
                 Having a good work ethic is a must. Nothing is more rewarding when hard work pays off. By doing nothing,
                 nothing changes.
               </p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="content--connect">
-          <h2>Connect with me:</h2>
-          <ul>
-            <li>
-              <a href="https://github.com/SeikyouP" aria-label="Github" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-
-            <li>
-              <a href="https://codepen.io/SeikyouP" aria-label="CodePen" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-codepen"></i
-              ></a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.linkedin.com/in/bryan-onwas-7b5749127"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </li>
-          </ul>
-        </section>
-      </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Sidebar Menu -->
-    <aside>
-      <div class="sidebar">
-        <nav class="sidebar--menu">
-          <h2 class="sidebar--menu--title"><i class="fas fa-globe"></i>Navigation</h2>
-          <ul>
-            <li>
-              <a href="#top"><i class="fas fa-home"></i>Home</a>
-            </li>
+    <!-- Scroll-to-Top Button -->
+    <div class="top-btn">
+      <i class="material-icons-outlined">
+        <a href="#home">arrow_upward</a>
+      </i>
+    </div>
 
-            <li>
-              <a href="#about"><i class="fas fa-question-circle"></i>About</a>
-            </li>
+    <!-- Modal Space (For outside click events (i.e Sidebars, Modals, etc.)) -->
+    <div class="modal" id="outside-click"></div>
 
-            <li>
-              <a href="#skills"><i class="fas fa-code"></i>Skills</a>
-            </li>
+    <!-- Footer Menu -->
+    <footer>
+      <div class="social-menu">
+        <h2>Connect</h2>
+        <div class="social-links">
+          <a href="https://github.com/SeikyouP" aria-label="Github" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
 
-            <li>
-              <a href="#projects"><i class="fas fa-desktop"></i>Projects</a>
-            </li>
+          <a href="https://codepen.io/SeikyouP" aria-label="CodePen" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-codepen"></i
+          ></a>
 
-            <li>
-              <a href="#hire"><i class="fas fa-user-tie"></i>Hire Me</a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav class="sidebar--menu">
-          <h2 class="sidebar--menu--title"><i class="fas fa-users"></i>Connect</h2>
-          <ul>
-            <li>
-              <a href="https://github.com/BryanOnwas" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-github"></i>GitHub</a
-              >
-            </li>
-
-            <li>
-              <a href="https://codepen.io/SeikyouP" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-codepen"></i>CodePen</a
-              >
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/in/bryan-onwas-7b5749127" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-linkedin"></i>LinkedIn</a
-              >
-            </li>
-          </ul>
-        </nav>
+          <a
+            href="https://www.linkedin.com/in/bryan-onwas-7b5749127"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
       </div>
-    </aside>
+      <div class="copyright">&copy; Copyright 2020 SeikyouP</div>
+    </footer>
 
-    <!-- Bottom Footer -->
-    <footer><div class="copyright">&copy; 2020 SeikyouP. All rights reserved</div></footer>
-
-    <!-- Modal Space (in case of outside click events) -->
-    <div class="modal-space"><div class="modal"></div></div>
-
-    <!-- Scroll to top Button -->
-    <!-- NOTE: For IE + Firefox browsers, 'button' tags won't work for smooth-scroll. Use 'div' tags instead -->
-    <div class="btn btn--top"><a href="#top">Top</a></div>
-
-    <!-- JS Files/Dependencies -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/wow.js"></script>
+    <script src="js/imports/smooth-scroll.js"></script>
+    <script src="js/imports/wow.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

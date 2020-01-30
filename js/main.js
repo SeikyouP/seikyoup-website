@@ -1,105 +1,111 @@
 // Define Variables
-var navBtn = document.querySelector('.top--brand--icon');
-var navBar = document.querySelector('header');
-var sideBar = document.querySelector('aside');
-var sections = document.querySelectorAll('section');
-var topBtn = document.querySelector('.btn--top');
-var modalSpace = document.querySelector('.modal-space');
 var body = document.querySelector('body');
-var lists = document.querySelectorAll('.sidebar--menu li');
-var mobile = window.matchMedia('(max-width: 768px)');
-var darkBtn = document.querySelector('.btn--dark');
+var header = document.querySelector('header');
+var aside = document.querySelector('aside');
+var asideBtn = document.querySelector('.hamburger');
+var asideMenu = document.querySelector('.moblie-menu');
+var topBtn = document.querySelector('.top-btn');
+var modal = document.querySelector('.modal');
+var asideLists = document.querySelectorAll('.moblie-menu a');
 
-// Include Smooth Scroll functionality
+// Include Smooth Scroll JS functionality
 var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 500,
-  offset: 64
+  speed: 750,
+  updateURL: false
 });
 
-// Include WOW functionality
+// Include WOW JS functionality
 new WOW().init();
 
 // Event Handlers
-navBtn.addEventListener('click', navButton);
+asideBtn.addEventListener('click', navButton);
 window.addEventListener('scroll', topButton);
-window.addEventListener('scroll', navTop);
-modalSpace.addEventListener('click', outsideClick);
-window.addEventListener('resize', Resize);
+window.addEventListener('scroll', headerTop);
+modal.addEventListener('click', outsideClick);
+window.addEventListener('scroll', modalSize);
 
 // Listen for clicks on sidebar navigation links
-lists.forEach(function(list) {
-  list.addEventListener('click', listClose);
+asideLists.forEach(function(asideList) {
+  asideList.addEventListener('click', listClose);
 });
 
 // Event Functions
 function navButton() {
-  navBtn.children[0].classList.toggle('is-active');
-  sideBar.classList.toggle('open');
-  modalSpace.classList.toggle('modal-space__active');
-
-  // Remove scroll bar when viewed on mobile devices
-  if (mobile.matches) {
-    body.classList.toggle('active');
-  }
+  asideBtn.classList.toggle('is-active');
+  asideMenu.classList.toggle('open');
+  modal.classList.toggle('active');
 }
 
 // Check where (y-position) the top button should be visible/invisible
 function topButton() {
   // Check where (y-position) the top button should be visible
   if (window.pageYOffset >= 150) {
-    topBtn.classList.add('btn--top__active');
+    topBtn.classList.add('active');
   }
 
   // Otherwise, check which Y-position the top button should be invisible
-  else if (window.pageYOffset < 100) {
-    topBtn.classList.remove('btn--top__active');
+  else if (window.pageYOffset < 50) {
+    topBtn.classList.remove('active');
   }
 }
 
-function navTop() {
+function headerTop() {
   // Change header opacity/color when scrolled away from top
   if (window.pageYOffset > 0) {
-    navBar.classList.add('active');
+    header.classList.add('active');
+    aside.classList.add('active');
   }
 
   // Otherwise, revert header opacity/color when scrolled back to top
   else if (window.pageYOffset === 0) {
-    navBar.classList.remove('active');
+    header.classList.remove('active');
+    aside.classList.remove('active');
   }
 }
 
-// Listen for outside modal/sidebar clicks
+function modalSize() {
+  // Change modal height to 100% when scrolled away from top
+  if (window.pageYOffset >= 150) {
+    modal.classList.add('scrolled');
+  }
+
+  // Otherwise, revert modal size to default when scrolled back to top
+  else if (window.pageYOffset < 150) {
+    modal.classList.remove('scrolled');
+  }
+}
+
+// Listen for outside clicks
 function outsideClick() {
-  navBtn.children[0].classList.remove('is-active');
-  sideBar.classList.remove('open');
-  modalSpace.classList.remove('modal-space__active');
-
-  // Add scroll bar when viewed on tablet/desktop devices
-  if (mobile.matches) {
-    body.classList.remove('active');
-  }
+  asideBtn.classList.remove('is-active');
+  asideMenu.classList.remove('open');
+  modal.classList.remove('active');
 }
 
-// Listen for manual window resizing by user
-function Resize() {
-  // Check if window is resized to mobile while the sidebar is open
-  // Remove the scroll bar if that's the case
-  if (document.body.clientWidth <= '768' && sideBar.className === 'open') {
-    body.classList.add('active');
-  }
-
-  // Check if window is resized to tablet/desktop while the sidebar is open
-  // Add the scroll bar back if that's the case
-  else {
-    body.classList.remove('active');
-  }
-}
-
-// On mobile devces, close the sidebar when navigation links are clicked
+// Close the mobile menu when navigation links are clicked
 function listClose() {
-  if (mobile.matches) {
-    outsideClick();
-  }
+  outsideClick();
 }
 
-// Function Calls (if any)
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// var sections = document.querySelectorAll('section');
+// var position = document.querySelectorAll('.header-menu a');
+
+// // Determine if an element is in the visible viewport
+// function isVisible(ele) {
+//   const { top, bottom } = ele.getBoundingClientRect();
+//   const vHeight = window.innerHeight || document.documentElement.clientHeight;
+
+//   return (top > 0 || bottom > 0) && top < vHeight;
+// }
+
+// //The above function could be used by adding a “scroll” event listener to the window and then calling isInViewport().
+// window.addEventListener('scroll', function() {
+//   for (i = 0; i < sections.length; i++) {
+//     if (isVisible(sections[i])) {
+//       position[i].classList.add('current');
+//     } else {
+//       position[i].classList.remove('current');
+//     }
+//   }
+// });
