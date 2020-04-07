@@ -1,0 +1,27 @@
+/* Tablet Display Only */
+@media only screen and (max-width: 960px) {
+  section {
+    &#services {
+      .step {
+        display: flex;
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+
+        .circle {
+          width: 14rem;
+          height: 14rem;
+
+          .number {
+            font-size: 8rem;
+          }
+
+          .title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

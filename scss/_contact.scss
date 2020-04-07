@@ -1,0 +1,29 @@
+// Section -- CONTACT SECTION
+section {
+  &#contact {
+    height: 100vh;
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -0.5rem;
+
+      .contact-card {
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        flex-grow: 1;
+        flex-basis: 349.33px;
+        box-shadow: 2px 2px 8px #888888;
+
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

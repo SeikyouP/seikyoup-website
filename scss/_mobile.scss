@@ -1,0 +1,153 @@
+/* Mobile Display Only */
+@media only screen and (max-width: 767px) {
+  header {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    line-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    transition: box-shadow 250ms;
+
+    &.active {
+      box-shadow: 2px 2px 8px #888888;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 2rem;
+      position: relative;
+
+      .name {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .hamburger {
+        padding: 0 1rem;
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+          background-color: #000;
+        }
+
+        &.is-active .hamburger-inner,
+        &.is-active .hamburger-inner::before,
+        &.is-active .hamburger-inner::after {
+          background-color: #000;
+        }
+      }
+    }
+
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      overflow: hidden;
+      height: 0;
+      transition: all 250ms;
+      background-color: #fff;
+
+      &.open {
+        height: 480px;
+      }
+    }
+
+    li {
+      transition: all 250ms;
+
+      &.current {
+        background-color: lavender;
+      }
+
+      &:first-child {
+        box-shadow: inset 0 4px 2px -2px gray;
+      }
+
+      &:last-child {
+        box-shadow: 0 4px 8px -8px gray;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 0 1rem;
+      transition: 200ms linear;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  section {
+    h2.title,
+    h3.title {
+      font-size: 2.25rem;
+    }
+  }
+
+  section {
+    &#home {
+      .name-box {
+        h1.name {
+          font-size: 3rem;
+        }
+
+        h2.role {
+          font-size: 1.5rem;
+          padding: 0.5rem 0 0 0;
+        }
+      }
+    }
+  }
+
+  section {
+    &#services {
+      .step {
+        display: block;
+        margin: auto;
+        padding: auto;
+
+        &:nth-child(odd) {
+          flex-direction: row;
+        }
+
+        .circle {
+          margin: 1rem auto;
+        }
+
+        p {
+          font-size: 1.25rem;
+          text-align: center;
+          width: 100%;
+
+          &.odd {
+            margin-left: 0;
+          }
+
+          &.even {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .copyright {
+      font-size: 0.75rem;
+    }
+  }
+}

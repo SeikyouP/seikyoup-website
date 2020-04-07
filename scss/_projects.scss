@@ -1,0 +1,76 @@
+// Section -- PROJECTS SECTION
+section {
+  &#projects {
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -0.5rem;
+
+      figure {
+        // flex-basis: calc(100% / 3 - 2rem);
+        flex-basis: 349.33px;
+        flex-grow: 1;
+        margin: 0.5rem;
+        text-align: center;
+        box-shadow: 2px 2px 8px #888888;
+
+        & > * {
+          pointer-events: none; // Prevents e.target from clicking on child elements
+        }
+
+        .project-title {
+          font-family: 'Montserrat';
+          font-size: 2rem;
+          font-weight: 300;
+          padding: 1rem;
+          background-color: #eee;
+        }
+
+        .project-card {
+          position: relative;
+          min-width: 349.33px;
+          height: 250px;
+
+          .thumbnail {
+            margin: auto;
+            width: inherit;
+            height: inherit;
+            position: relative;
+            background-color: #fff;
+
+            .empty {
+              text-align: center;
+              position: absolute;
+              width: 100%;
+              font-size: 4rem;
+              font-weight: 300;
+              top: 50%;
+              transform: translateY(-50%);
+              color: #000;
+            }
+          }
+        }
+
+        figcaption {
+          font-size: 1rem;
+          padding: 1rem;
+          background-color: #eee;
+          font-weight: bold;
+        }
+      }
+
+      @supports (display: grid) {
+        display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(349.33px, 1fr));
+        grid-gap: 1rem;
+        margin: 0;
+
+        figure {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

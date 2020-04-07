@@ -1,0 +1,58 @@
+// HEADER
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  line-height: 5rem;
+  transition: box-shadow 250ms;
+
+  color: #000;
+
+  &.active {
+    box-shadow: 2px 2px 8px #888888;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 2rem;
+      display: block;
+
+      .name {
+        &:hover {
+          background-color: transparent;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .header-menu {
+      display: flex;
+      flex-direction: row;
+      text-transform: uppercase;
+    }
+
+    li {
+      transition: all 250ms;
+
+      &.current {
+        background-color: lavender;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 0 1rem;
+      transition: 200ms linear;
+      text-align: center;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

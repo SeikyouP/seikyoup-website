@@ -1,0 +1,64 @@
+// Section -- HIRE ME SECTION
+section {
+  &#hire-me {
+    background-color: rgb(230, 230, 250);
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -0.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex-grow: 1;
+      flex-basis: 349.33px;
+      box-shadow: 2px 2px 4px #888888;
+
+      .card-title {
+        padding-bottom: 1rem;
+        text-align: center;
+
+        i {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-family: 'Montserrat';
+          text-transform: uppercase;
+          font-size: 1.75rem;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    @supports (display: grid) {
+      .cards {
+        display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(349.33px, 1fr));
+        grid-gap: 1rem;
+        margin: 0;
+      }
+
+      .card {
+        width: auto;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// Section -- SERVICES SECTION
+section {
+  &#services {
+    background-color: rgb(10, 7, 41);
+    color: #fff;
+    margin-bottom: -2rem;
+    z-index: 5;
+
+    .step {
+      display: flex;
+      margin: 2rem 0;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(even) {
+        flex-direction: row;
+      }
+
+      .circle {
+        display: flex;
+        text-align: center;
+        background-color: steelblue;
+        width: 16rem;
+        height: 16rem;
+        border: 1rem double #fff;
+        border-radius: 50%;
+
+        .circle-info {
+          position: relative;
+          margin: auto;
+          top: -0.5rem;
+
+          .number {
+            font-family: 'Montserrat';
+            font-size: 10rem;
+            font-weight: bold;
+          }
+
+          .title {
+            padding: 0;
+            font-size: 1.5rem;
+            font-weight: lighter;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            text-align: center;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 150%;
+        width: calc(100% - 18rem);
+
+        &.odd {
+          margin-left: 2rem;
+        }
+
+        &.even {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

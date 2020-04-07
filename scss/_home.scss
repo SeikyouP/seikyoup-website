@@ -1,0 +1,96 @@
+// Section -- HOME SECTION
+section {
+  &#home {
+    padding: 0;
+    height: 100vh;
+    z-index: 2;
+    box-shadow: 2px 2px 8px #888888;
+    background-color: #fff;
+
+    .name-box {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+
+      h1 {
+        &.name {
+          font-family: 'Lato';
+          font-size: 4rem;
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        font-size: 2rem;
+
+        &.role {
+          font-weight: normal;
+          padding: 0.5rem 0;
+        }
+
+        &.title {
+          font-size: 3rem;
+        }
+      }
+
+      .social-menu {
+        padding: 0.5rem 0;
+
+        .social-links {
+          text-align: center;
+          font-size: 2rem;
+
+          a {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .arrow-box {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      background-color: rgb(10, 7, 41);
+      padding: 1rem 0;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      i {
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background-color: steelblue;
+        font-size: 3rem;
+        animation: fade-in-out 2000ms ease-in-out infinite;
+        opacity: 1;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      @keyframes fade-in-out {
+        0% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0.25;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+      a {
+        color: #000;
+      }
+    }
+  }
+}
