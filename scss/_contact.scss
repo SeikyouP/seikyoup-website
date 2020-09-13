@@ -4,9 +4,10 @@ section {
     form {
       .form-group {
         margin-bottom: 1rem;
+
         input,
         textarea {
-          width: 100%;
+          width: calc(100% - 2rem);
           border-radius: 0.25rem;
           padding: 1rem;
           font-size: 1.25rem;
