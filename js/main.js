@@ -136,7 +136,6 @@ function openModal() {
 // Function to close modal
 function closeModal() {
   projectModal.style.display = 'none'
-  // body.classList.remove('active');
   var lis = document.querySelectorAll('.tech-used li')
 
   // Remove/Reset tech-used items when clicked
@@ -154,7 +153,7 @@ function showModal(e) {
   var description = document.querySelector('.modal-description')
   var websiteBtn = document.querySelector('#website-btn a')
   var githubBtn = document.querySelector('#github-btn a')
-  var modalImage = document.querySelectorAll('.modal-image')
+  var modalImage = document.querySelector('.modal-image img')
 
   // Note: CSS Pointer-events is set to "none" for this to work properly
   switch (e.target.id) {
@@ -164,7 +163,22 @@ function showModal(e) {
     case 'project-1':
       title.textContent = 'Project #1'
       description.textContent = 'Modal 1'
-      modalImage.src = null
+      modalImage.src = '#'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -224,7 +238,22 @@ function showModal(e) {
     case 'project-2':
       title.textContent = 'Project #2'
       description.textContent = 'Modal 2'
-      modalImage.src = null
+      modalImage.src = '#'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -283,7 +312,22 @@ function showModal(e) {
     case 'project-3':
       title.textContent = 'Project #3'
       description.textContent = 'Modal 3'
-      modalImage.src = null
+      modalImage.src = '#'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -342,7 +386,22 @@ function showModal(e) {
     case 'project-4':
       title.textContent = 'Project #4'
       description.textContent = 'Modal 4'
-      modalImage.src = null
+      modalImage.src = '#'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -402,7 +461,22 @@ function showModal(e) {
     case 'project-5':
       title.textContent = 'Project #5'
       description.textContent = 'Modal 5'
-      modalImage.src = null
+      modalImage.src = '#'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -462,7 +536,22 @@ function showModal(e) {
     case 'project-6':
       title.textContent = 'Project #6'
       description.textContent = 'Modal 6'
-      modalImage.src = null
+      modalImage.src = '../img/project6.png'
+
+      // Check if image src is present
+      if (
+        modalImage.getAttribute('src') === '' ||
+        modalImage.getAttribute('src') === '/' ||
+        modalImage.getAttribute('src') === '#'
+      ) {
+        modalImage.style.display = 'none'
+      } else if (
+        modalImage.getAttribute('src') !== '' ||
+        modalImage.getAttribute('src') !== '/' ||
+        modalImage.getAttribute('src') !== '#'
+      ) {
+        modalImage.style.display = 'block'
+      }
 
       // Function to create li or lis
       function createListItem(text) {
@@ -486,7 +575,8 @@ function showModal(e) {
       var lis = [
         createListItem('HTML'),
         createListItem('CSS'),
-        createListItem('HTML Email'),
+        createListItem('SASS'),
+        createListItem('Javascript'),
       ]
 
       // Call the function

@@ -36,7 +36,7 @@
       width: 100%;
       max-width: 1080px;
       z-index: 20;
-      background-color: #fff;
+      background-color: #eee;
       overflow: auto;
       animation: fade 500ms;
 
@@ -73,11 +73,10 @@
       .modal-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 3rem;
 
         .modal-info {
-          width: 40%;
+          flex-basis: 40%;
           h3 {
             text-align: left;
             font-size: 2rem;
@@ -95,11 +94,10 @@
 
               li {
                 border: 1px solid #000;
-                border-radius: 0.25rem;
                 padding: 0.25rem 0.5rem;
                 display: inline-block;
-                margin: 0.25rem;
-                font-size: 0.9rem;
+                margin-right: 0.25rem;
+                font-size: 1rem;
               }
             }
           }
@@ -110,7 +108,6 @@
 
             a {
               border: 1px solid #000;
-              border-radius: 1.5rem;
               padding: 0.75rem 2rem;
               font-weight: bold;
               color: #fff;
@@ -121,7 +118,12 @@
         }
 
         .modal-image {
-          width: 60%;
+          flex-basis: 60%;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
         }
       }
     }
