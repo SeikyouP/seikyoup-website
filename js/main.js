@@ -254,8 +254,8 @@ function showModal(e) {
       appendChildren(ul, lis)
 
       // Reset link defaults
-      websiteBtn.href = ''
-      githubBtn.href = ''
+      websiteBtn.href = 'https://seikyoup.com/'
+      githubBtn.href = 'https://github.com/SeikyouP/seikyoup-website'
 
       // Remove website link completely if href link does not exist
       if (
@@ -313,8 +313,188 @@ function showModal(e) {
       appendChildren(ul, lis)
 
       // Reset link defaults
-      websiteBtn.href = ''
-      githubBtn.href = ''
+      websiteBtn.href = 'https://seikyoup.com/'
+      githubBtn.href = 'https://github.com/SeikyouP/seikyoup-website'
+
+      // Remove website link completely if href link does not exist
+      if (
+        websiteBtn.getAttribute('href') === '' ||
+        websiteBtn.getAttribute('href') === '/' ||
+        websiteBtn.getAttribute('href') === '#'
+      ) {
+        websiteBtn.removeAttribute('href')
+      }
+
+      // Remove github link completely if href link does not exist
+      if (
+        githubBtn.getAttribute('href') === '' ||
+        githubBtn.getAttribute('href') === '/' ||
+        githubBtn.getAttribute('href') === '#'
+      ) {
+        githubBtn.removeAttribute('href')
+      }
+
+      break
+
+    // =============== //
+    // Project 4 Modal //
+    // =============== //
+    case 'project-4':
+      title.textContent = 'Project #4'
+      description.textContent = 'Modal 4'
+      modalImage.src = null
+
+      // Function to create li or lis
+      function createListItem(text) {
+        var li = document.createElement('li')
+        li.className = 'test'
+        li.textContent = text
+        return li
+      }
+
+      // Function to append li or lis into ul
+      function appendChildren(parent, children) {
+        children.forEach(function (child) {
+          parent.appendChild(child)
+        })
+      }
+
+      //  Select element to be used as parent
+      var ul = document.querySelector('.tech-used ul')
+
+      // Add Text Content into each li (child/children)
+      var lis = [
+        createListItem('HTML'),
+        createListItem('CSS'),
+        createListItem('HTML Email'),
+      ]
+
+      // Call the function
+      appendChildren(ul, lis)
+
+      // Reset link defaults
+      websiteBtn.href = 'https://seikyoup.com/'
+      githubBtn.href = 'https://github.com/SeikyouP/seikyoup-website'
+
+      // Remove website link completely if href link does not exist
+      if (
+        websiteBtn.getAttribute('href') === '' ||
+        websiteBtn.getAttribute('href') === '/' ||
+        websiteBtn.getAttribute('href') === '#'
+      ) {
+        websiteBtn.removeAttribute('href')
+      }
+
+      // Remove github link completely if href link does not exist
+      if (
+        githubBtn.getAttribute('href') === '' ||
+        githubBtn.getAttribute('href') === '/' ||
+        githubBtn.getAttribute('href') === '#'
+      ) {
+        githubBtn.removeAttribute('href')
+      }
+
+      break
+
+    // =============== //
+    // Project 5 Modal //
+    // =============== //
+    case 'project-5':
+      title.textContent = 'Project #5'
+      description.textContent = 'Modal 5'
+      modalImage.src = null
+
+      // Function to create li or lis
+      function createListItem(text) {
+        var li = document.createElement('li')
+        li.className = 'test'
+        li.textContent = text
+        return li
+      }
+
+      // Function to append li or lis into ul
+      function appendChildren(parent, children) {
+        children.forEach(function (child) {
+          parent.appendChild(child)
+        })
+      }
+
+      //  Select element to be used as parent
+      var ul = document.querySelector('.tech-used ul')
+
+      // Add Text Content into each li (child/children)
+      var lis = [
+        createListItem('HTML'),
+        createListItem('CSS'),
+        createListItem('HTML Email'),
+      ]
+
+      // Call the function
+      appendChildren(ul, lis)
+
+      // Reset link defaults
+      websiteBtn.href = 'https://seikyoup.com/'
+      githubBtn.href = 'https://github.com/SeikyouP/seikyoup-website'
+
+      // Remove website link completely if href link does not exist
+      if (
+        websiteBtn.getAttribute('href') === '' ||
+        websiteBtn.getAttribute('href') === '/' ||
+        websiteBtn.getAttribute('href') === '#'
+      ) {
+        websiteBtn.removeAttribute('href')
+      }
+
+      // Remove github link completely if href link does not exist
+      if (
+        githubBtn.getAttribute('href') === '' ||
+        githubBtn.getAttribute('href') === '/' ||
+        githubBtn.getAttribute('href') === '#'
+      ) {
+        githubBtn.removeAttribute('href')
+      }
+
+      break
+
+    // =============== //
+    // Project 6 Modal //
+    // =============== //
+    case 'project-6':
+      title.textContent = 'Project #6'
+      description.textContent = 'Modal 6'
+      modalImage.src = null
+
+      // Function to create li or lis
+      function createListItem(text) {
+        var li = document.createElement('li')
+        li.className = 'test'
+        li.textContent = text
+        return li
+      }
+
+      // Function to append li or lis into ul
+      function appendChildren(parent, children) {
+        children.forEach(function (child) {
+          parent.appendChild(child)
+        })
+      }
+
+      //  Select element to be used as parent
+      var ul = document.querySelector('.tech-used ul')
+
+      // Add Text Content into each li (child/children)
+      var lis = [
+        createListItem('HTML'),
+        createListItem('CSS'),
+        createListItem('HTML Email'),
+      ]
+
+      // Call the function
+      appendChildren(ul, lis)
+
+      // Reset link defaults
+      websiteBtn.href = 'https://seikyoup.com/'
+      githubBtn.href = 'https://github.com/SeikyouP/seikyoup-website'
 
       // Remove website link completely if href link does not exist
       if (

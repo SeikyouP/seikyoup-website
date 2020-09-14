@@ -14,8 +14,9 @@ footer {
     }
 
     .social-links {
+      margin-top: 0.5rem;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
 
       a {
         margin: 0 0.5rem;
@@ -24,7 +25,7 @@ footer {
   }
 
   .copyright {
-    padding: 2rem 0;
+    padding: calc(2rem + 3px) 0;
     background-color: #222;
     text-align: center;
     text-transform: uppercase;
