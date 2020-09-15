@@ -7,6 +7,12 @@
 @import 'config';
 
 /* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Nunito', 'Open Sans', 'Lato', 'Montserrat', Arial, Helvetica,
     sans-serif;

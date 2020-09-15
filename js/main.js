@@ -37,9 +37,6 @@ var ms2 = new MenuSpy(elm2, {
   enableLocationHash: false,
 })
 
-// Include WOW JS
-new WOW().init()
-
 // Event Handlers
 asideBtn.addEventListener('click', toggleList)
 closeBtn.addEventListener('click', closeModal)

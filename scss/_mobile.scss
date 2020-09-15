@@ -59,7 +59,7 @@
       background-color: #fff;
 
       &.open {
-        height: 480px;
+        height: 400px;
       }
     }
 
@@ -108,38 +108,6 @@
         h2.role {
           font-size: 1.5rem;
           padding: 0.5rem 0 0 0;
-        }
-      }
-    }
-  }
-
-  section {
-    &#services {
-      .step {
-        display: block;
-        margin: auto;
-        padding: auto;
-
-        &:nth-child(odd) {
-          flex-direction: row;
-        }
-
-        .circle {
-          margin: 1rem auto;
-        }
-
-        p {
-          font-size: 1.25rem;
-          text-align: center;
-          width: 100%;
-
-          &.odd {
-            margin-left: 0;
-          }
-
-          &.even {
-            margin-right: 0;
-          }
         }
       }
     }

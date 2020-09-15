@@ -32,12 +32,10 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      height: 600px;
       width: 100%;
       max-width: 1080px;
       z-index: 20;
       background-color: #eee;
-      overflow: auto;
       animation: fade 500ms;
 
       @keyframes fade {
@@ -72,57 +70,70 @@
 
       .modal-content {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         padding: 3rem;
+        width: 100%;
 
         .modal-info {
-          flex-basis: 40%;
-          h3 {
+          .modal-title {
             text-align: left;
             font-size: 2rem;
             text-align: left;
             font-family: 'Montserrat';
+            font-weight: bold;
           }
 
-          p {
+          .modal-description {
             margin: 1rem 0;
           }
 
           .tech-used {
             ul {
-              margin-bottom: 1rem;
-
               li {
                 border: 1px solid #000;
-                padding: 0.25rem 0.5rem;
+                padding: 0.5rem;
                 display: inline-block;
-                margin-right: 0.25rem;
+                margin: 0 0.5rem 0.25rem 0;
                 font-size: 1rem;
+                background-color: rgb(10, 7, 41);
+                color: #fff;
               }
             }
           }
 
-          .modal-button {
-            display: inline-block;
-            margin: 0.5rem 0.25rem 1rem 0;
+          .modal-image {
+            height: auto;
+            max-width: 100%;
 
-            a {
-              border: 1px solid #000;
-              padding: 0.75rem 2rem;
-              font-weight: bold;
-              color: #fff;
-              display: block;
-              background-color: rgb(10, 7, 41);
+            img {
+              max-width: 100%;
+              height: auto;
             }
           }
-        }
 
-        .modal-image {
-          flex-basis: 60%;
+          .modal-button-box {
+            .modal-button {
+              display: inline-block;
+              margin: 0.75rem 0 1rem 0;
 
-          img {
-            max-width: 100%;
-            height: auto;
+              &:first-child {
+                margin-right: 0.5rem;
+              }
+
+              &:last-child {
+                margin-left: 0.5rem;
+              }
+
+              a {
+                padding: 1rem;
+                font-weight: bold;
+                font-size: 1rem;
+                display: block;
+                text-align: center;
+                background-color: $secondary-color;
+                color: $white;
+              }
+            }
           }
         }
       }
